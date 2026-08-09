@@ -1,0 +1,51 @@
+{
+  "scenario_id": "S002",
+  "scenario_name": "Equipment Warning",
+  "shift_id": "SHIFT-S002",
+  "status": "SUCCESS",
+  "latency_seconds": 2.597,
+  "report": {
+    "shift_id": "SHIFT-S002",
+    "executive_summary": "Target production of 1000 units was not met (actual 980 units, loss 20 units). A high vibration warning on equipment P-101 was acknowledged; production continued with a minor deviation.",
+    "key_events": [
+      {
+        "event": "High vibration alarm on P-101",
+        "severity": "WARNING",
+        "evidence_ids": [
+          "EVT-S002-01"
+        ]
+      }
+    ],
+    "equipment_issues": [
+      {
+        "equipment_id": "P-101",
+        "issue": "Elevated vibration observed (vibration 5.2 mm/s at 12:00)",
+        "status": "ACKNOWLEDGED",
+        "evidence_ids": [
+          "EQ-S002-02",
+          "EVT-S002-01"
+        ]
+      }
+    ],
+    "production_status": {
+      "target_quantity": 1000.0,
+      "actual_quantity": 980.0,
+      "loss_quantity": 20.0,
+      "downtime_minutes": 15.0,
+      "status": "BELOW_TARGET",
+      "evidence_ids": [
+        "PROD-S002"
+      ]
+    },
+    "outstanding_actions": [],
+    "next_shift_attention": [
+      "Continue monitoring vibration levels on P-101",
+      "Verify that production remains on target for the remainder of the run"
+    ],
+    "evidence_limitations": [
+      "No vibration threshold values provided to determine if measured levels exceed acceptable limits",
+      "No root cause analysis or maintenance actions recorded for the vibration warning",
+      "Operator notes indicate increased noise but no quantitative measurement beyond the two readings"
+    ]
+  }
+}

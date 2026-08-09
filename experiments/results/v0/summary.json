@@ -1,0 +1,72 @@
+[
+  {
+    "scenario_id": "S001",
+    "scenario_name": "Normal Shift",
+    "shift_id": "SHIFT-S001",
+    "status": "SUCCESS",
+    "latency_seconds": 3.386
+  },
+  {
+    "scenario_id": "S002",
+    "scenario_name": "Equipment Warning",
+    "shift_id": "SHIFT-S002",
+    "status": "SUCCESS",
+    "latency_seconds": 2.597
+  },
+  {
+    "scenario_id": "S003",
+    "scenario_name": "Equipment Failure",
+    "shift_id": "SHIFT-S003",
+    "status": "SUCCESS",
+    "latency_seconds": 3.02
+  },
+  {
+    "scenario_id": "S004",
+    "scenario_name": "Production Deviation",
+    "shift_id": "SHIFT-S004",
+    "status": "SUCCESS",
+    "latency_seconds": 2.4
+  },
+  {
+    "scenario_id": "S005",
+    "scenario_name": "Outstanding Maintenance",
+    "shift_id": "SHIFT-S005",
+    "status": "SUCCESS",
+    "latency_seconds": 23.671
+  },
+  {
+    "scenario_id": "S006",
+    "scenario_name": "Conflicting Evidence",
+    "shift_id": "SHIFT-S006",
+    "status": "SUCCESS",
+    "latency_seconds": 10.21
+  },
+  {
+    "scenario_id": "S007",
+    "scenario_name": "Missing Information",
+    "shift_id": "SHIFT-S007",
+    "status": "SUCCESS",
+    "latency_seconds": 19.775
+  },
+  {
+    "scenario_id": "S008",
+    "scenario_name": "Multiple Events",
+    "shift_id": "SHIFT-S008",
+    "status": "SUCCESS",
+    "latency_seconds": 19.935
+  },
+  {
+    "scenario_id": "S009",
+    "scenario_name": "Recovered Alarm",
+    "shift_id": "SHIFT-S009",
+    "status": "SUCCESS",
+    "latency_seconds": 21.47
+  },
+  {
+    "scenario_id": "S010",
+    "scenario_name": "High Severity Event",
+    "shift_id": "SHIFT-S010",
+    "status": "SUCCESS",
+    "latency_seconds": 23.824
+  }
+]

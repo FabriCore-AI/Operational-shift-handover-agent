@@ -1,0 +1,38 @@
+{
+  "scenario_id": "S004",
+  "scenario_name": "Production Deviation",
+  "shift_id": "SHIFT-S004",
+  "status": "SUCCESS",
+  "latency_seconds": 2.4,
+  "report": {
+    "shift_id": "SHIFT-S004",
+    "executive_summary": "Target production 1000 units; actual 920 units (loss 80 units). Downtime 55 minutes. Shift status reported as Major Deviation. Operator summary links loss to P-101 downtime.",
+    "key_events": [
+      {
+        "event": "P-101 downtime caused production loss",
+        "severity": "High",
+        "evidence_ids": [
+          "NOTE-S004",
+          "PROD-S004"
+        ]
+      }
+    ],
+    "equipment_issues": [],
+    "production_status": {
+      "target_quantity": 1000.0,
+      "actual_quantity": 920.0,
+      "loss_quantity": 80.0,
+      "downtime_minutes": 55.0,
+      "status": "BELOW_TARGET",
+      "evidence_ids": [
+        "PROD-S004"
+      ]
+    },
+    "outstanding_actions": [],
+    "next_shift_attention": [],
+    "evidence_limitations": [
+      "No equipment records or alarm data were provided for P-101, limiting root\u2011cause analysis.",
+      "Maintenance records are absent, so no confirmed actions have been taken on the reported downtime."
+    ]
+  }
+}

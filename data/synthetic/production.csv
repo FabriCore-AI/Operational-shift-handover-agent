@@ -1,5 +1,5 @@
 production_id,scenario_id,unit,product,target_qty,actual_qty,loss_qty,downtime_minutes,status
-PROD-S001,S001,UNIT-A,Product-X,1000,995,0,0,ACHIEVED
+PROD-S001,S001,UNIT-A,Product-X,1000,995,5,0,ACHIEVED
 PROD-S002,S002,UNIT-A,Product-X,1000,980,20,15,BELOW_TARGET
 PROD-S003,S003,UNIT-A,Product-X,1000,900,100,60,BELOW_TARGET
 PROD-S004,S004,UNIT-A,Product-X,1000,920,80,55,BELOW_TARGET

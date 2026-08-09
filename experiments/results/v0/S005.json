@@ -1,0 +1,65 @@
+{
+  "scenario_id": "S005",
+  "scenario_name": "Outstanding Maintenance",
+  "shift_id": "SHIFT-S005",
+  "status": "SUCCESS",
+  "latency_seconds": 23.671,
+  "report": {
+    "shift_id": "SHIFT-S005",
+    "executive_summary": "Shift SHIFT-S005 completed with actual production 960 units versus target 1000 units (4% shortfall). Minor deviation reported. P-101 inspection remains open due to elevated vibration.",
+    "key_events": [
+      {
+        "event": "Maintenance request for P-101 bearing inspection due to elevated vibration",
+        "severity": "Medium",
+        "evidence_ids": [
+          "MNT-S005-01"
+        ]
+      },
+      {
+        "event": "Operator noted that P-101 inspection was requested before the next shift",
+        "severity": "Info",
+        "evidence_ids": [
+          "NOTE-S005"
+        ]
+      }
+    ],
+    "equipment_issues": [
+      {
+        "equipment_id": "P-101",
+        "issue": "Elevated vibration",
+        "status": "OPEN",
+        "evidence_ids": [
+          "MNT-S005-01"
+        ]
+      }
+    ],
+    "production_status": {
+      "target_quantity": 1000.0,
+      "actual_quantity": 960.0,
+      "loss_quantity": 40.0,
+      "downtime_minutes": 25.0,
+      "status": "BELOW_TARGET",
+      "evidence_ids": [
+        "PROD-S005"
+      ]
+    },
+    "outstanding_actions": [
+      {
+        "action": "Inspect bearing condition on P-101",
+        "owner_or_role": "Operator",
+        "status": "OPEN",
+        "evidence_ids": [
+          "MNT-S005-01",
+          "NOTE-S005"
+        ]
+      }
+    ],
+    "next_shift_attention": [
+      "Complete P-101 bearing inspection as requested."
+    ],
+    "evidence_limitations": [
+      "No equipment list provided; equipment details limited to maintenance record.",
+      "No alarm records provided."
+    ]
+  }
+}

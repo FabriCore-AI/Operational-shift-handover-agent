@@ -1,0 +1,39 @@
+{
+  "scenario_id": "S001",
+  "scenario_name": "Normal Shift",
+  "shift_id": "SHIFT-S001",
+  "status": "SUCCESS",
+  "latency_seconds": 3.386,
+  "report": {
+    "shift_id": "SHIFT-S001",
+    "executive_summary": "Shift met 99.5% of target production (995 of 1000). Loss quantity 5 units. No downtime recorded. Production status reported as ACHIEVED. No significant events reported.",
+    "key_events": [
+      {
+        "event": "Production remained stable with no significant issues.",
+        "severity": "Info",
+        "evidence_ids": [
+          "NOTE-S001"
+        ]
+      }
+    ],
+    "equipment_issues": [],
+    "production_status": {
+      "target_quantity": 1000.0,
+      "actual_quantity": 995.0,
+      "loss_quantity": 5.0,
+      "downtime_minutes": 0.0,
+      "status": "ACHIEVED",
+      "evidence_ids": [
+        "PROD-S001"
+      ]
+    },
+    "outstanding_actions": [],
+    "next_shift_attention": [
+      "No immediate actions required. Monitor production to maintain stability."
+    ],
+    "evidence_limitations": [
+      "No equipment, alarm, or maintenance records were provided for this shift.",
+      "Only a single operating note was available as narrative evidence."
+    ]
+  }
+}

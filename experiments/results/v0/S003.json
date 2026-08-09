@@ -1,0 +1,66 @@
+{
+  "scenario_id": "S003",
+  "scenario_name": "Equipment Failure",
+  "shift_id": "SHIFT-S003",
+  "status": "SUCCESS",
+  "latency_seconds": 3.02,
+  "report": {
+    "shift_id": "SHIFT-S003",
+    "executive_summary": "Shift SHIFT-S003 had a major deviation: target 1000\u202fkg, actual 900\u202fkg (loss 100\u202fkg). Downtime was 60\u202fminutes caused by a critical trip of pump P-101 at 17:05, which was cleared after corrective maintenance completed at 17:20.",
+    "key_events": [
+      {
+        "event": "Pump P-101 protection trip",
+        "severity": "CRITICAL",
+        "evidence_ids": [
+          "EVT-S003-01"
+        ]
+      },
+      {
+        "event": "Maintenance completed \u2013 inspection of pump and bearing assembly",
+        "severity": "INFO",
+        "evidence_ids": [
+          "MNT-S003-01"
+        ]
+      },
+      {
+        "event": "Supervisor note: P-101 tripped and was restored after maintenance intervention.",
+        "severity": "INFO",
+        "evidence_ids": [
+          "NOTE-S003"
+        ]
+      }
+    ],
+    "equipment_issues": [
+      {
+        "equipment_id": "P-101",
+        "issue": "Trip",
+        "status": "RESOLVED",
+        "evidence_ids": [
+          "EVT-S003-01",
+          "MNT-S003-01"
+        ]
+      }
+    ],
+    "production_status": {
+      "target_quantity": 1000.0,
+      "actual_quantity": 900.0,
+      "loss_quantity": 100.0,
+      "downtime_minutes": 60.0,
+      "status": "BELOW_TARGET",
+      "evidence_ids": [
+        "PROD-S003"
+      ]
+    },
+    "outstanding_actions": [],
+    "next_shift_attention": [
+      "Monitor pump P-101 for any recurring trips.",
+      "Investigate root cause of the P-101 trip.",
+      "Verify that the bearing assembly inspection results are documented."
+    ],
+    "evidence_limitations": [
+      "No detailed root cause analysis for the P-101 trip is provided.",
+      "No post\u2011maintenance performance data beyond the supervisor note.",
+      "No equipment sensor logs or vibration data are available."
+    ]
+  }
+}

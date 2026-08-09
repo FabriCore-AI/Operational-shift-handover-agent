@@ -1,0 +1,57 @@
+{
+  "scenario_id": "S009",
+  "scenario_name": "Recovered Alarm",
+  "shift_id": "SHIFT-S009",
+  "status": "SUCCESS",
+  "latency_seconds": 21.47,
+  "report": {
+    "shift_id": "SHIFT-S009",
+    "executive_summary": "Shift achieved 990 units of Product\u2011X (target 1000), a minor deviation of -10 units. A high temperature alarm on reactor R\u2011101 was triggered at 16:20, cleared after cooling\u2011system check, and temperature returned to normal.",
+    "key_events": [
+      {
+        "event": "High reactor temperature alarm (cleared)",
+        "severity": "WARNING",
+        "evidence_ids": [
+          "EVT-S009-01"
+        ]
+      },
+      {
+        "event": "R\u2011101 temperature returned to normal after cooling\u2011system check",
+        "severity": "INFO",
+        "evidence_ids": [
+          "NOTE-S009"
+        ]
+      }
+    ],
+    "equipment_issues": [
+      {
+        "equipment_id": "R-101",
+        "issue": "High temperature reading (94\u202f\u00b0C) observed at 16:10; returned to normal by 16:40",
+        "status": "CLEARED",
+        "evidence_ids": [
+          "EQ-S009-01",
+          "EQ-S009-02"
+        ]
+      }
+    ],
+    "production_status": {
+      "target_quantity": 1000.0,
+      "actual_quantity": 990.0,
+      "loss_quantity": 10.0,
+      "downtime_minutes": 10.0,
+      "status": "BELOW_TARGET",
+      "evidence_ids": [
+        "PROD-S009"
+      ]
+    },
+    "outstanding_actions": [],
+    "next_shift_attention": [
+      "Monitor R\u2011101 temperature during ramp\u2011up period",
+      "Verify cooling\u2011system performance after restart"
+    ],
+    "evidence_limitations": [
+      "No root\u2011cause analysis data provided for the temperature spike",
+      "No post\u2011shift verification measurements beyond the two recorded readings"
+    ]
+  }
+}

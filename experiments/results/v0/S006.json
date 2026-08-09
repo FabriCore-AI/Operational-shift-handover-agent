@@ -1,0 +1,47 @@
+{
+  "scenario_id": "S006",
+  "scenario_name": "Conflicting Evidence",
+  "shift_id": "SHIFT-S006",
+  "status": "SUCCESS",
+  "latency_seconds": 10.21,
+  "report": {
+    "shift_id": "SHIFT-S006",
+    "executive_summary": "The shift produced 970 units of Product\u2011X against a target of 1000 (Minor Deviation). Downtime was 20\u202fmin with a loss of 30 units. A high\u2011vibration warning alarm on pump P\u2011101 was active during the shift; the operator noted the equipment was operating normally.",
+    "key_events": [
+      {
+        "event": "High vibration alarm on P-101",
+        "severity": "WARNING",
+        "evidence_ids": [
+          "EVT-S006-01"
+        ]
+      }
+    ],
+    "equipment_issues": [
+      {
+        "equipment_id": "P-101",
+        "issue": "High vibration alarm active",
+        "status": "OPEN",
+        "evidence_ids": [
+          "EVT-S006-01",
+          "EQ-S006-01"
+        ]
+      }
+    ],
+    "production_status": {
+      "target_quantity": 1000.0,
+      "actual_quantity": 970.0,
+      "loss_quantity": 30.0,
+      "downtime_minutes": 20.0,
+      "status": "BELOW_TARGET",
+      "evidence_ids": [
+        "PROD-S006"
+      ]
+    },
+    "outstanding_actions": [],
+    "next_shift_attention": [],
+    "evidence_limitations": [
+      "Vibration threshold values are not provided, limiting assessment of the alarm severity.",
+      "No maintenance record exists for the vibration issue during this shift."
+    ]
+  }
+}

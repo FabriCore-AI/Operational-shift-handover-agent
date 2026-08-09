@@ -1,0 +1,74 @@
+{
+  "scenario_id": "S008",
+  "scenario_name": "Multiple Events",
+  "shift_id": "SHIFT-S008",
+  "status": "SUCCESS",
+  "latency_seconds": 19.935,
+  "report": {
+    "shift_id": "SHIFT-S008",
+    "executive_summary": "Shift SHIFT-S008 reported a major deviation: actual production 890 units versus target 1000 units, resulting in a loss of 110 units and 75 minutes of downtime. Two warning alarms were recorded (high vibration on P-101 and high temperature on R-101). No maintenance actions were logged for these events.",
+    "key_events": [
+      {
+        "event": "High vibration on equipment P-101",
+        "severity": "WARNING",
+        "evidence_ids": [
+          "EVT-S008-01"
+        ]
+      },
+      {
+        "event": "High reactor temperature on equipment R-101",
+        "severity": "WARNING",
+        "evidence_ids": [
+          "EVT-S008-02"
+        ]
+      },
+      {
+        "event": "Supervisor note: vibration increased on P-101 while temperature rose on R-101",
+        "severity": "INFO",
+        "evidence_ids": [
+          "NOTE-S008"
+        ]
+      }
+    ],
+    "equipment_issues": [
+      {
+        "equipment_id": "P-101",
+        "issue": "High vibration",
+        "status": "OPEN",
+        "evidence_ids": [
+          "EVT-S008-01"
+        ]
+      },
+      {
+        "equipment_id": "R-101",
+        "issue": "High reactor temperature",
+        "status": "OPEN",
+        "evidence_ids": [
+          "EVT-S008-02"
+        ]
+      }
+    ],
+    "production_status": {
+      "target_quantity": 1000.0,
+      "actual_quantity": 890.0,
+      "loss_quantity": 110.0,
+      "downtime_minutes": 75.0,
+      "status": "BELOW_TARGET",
+      "evidence_ids": [
+        "PROD-S008"
+      ]
+    },
+    "outstanding_actions": [],
+    "next_shift_attention": [
+      "Monitor high vibration alarm on P-101 (EVT-S008-01)",
+      "Monitor high temperature alarm on R-101 (EVT-S008-02)",
+      "Address production shortfall (PROD-S008)"
+    ],
+    "evidence_limitations": [
+      "No equipment status details were provided in the data",
+      "No maintenance actions or resolutions were recorded for the alarms",
+      "Alarm state information is limited to ACTIVE/ACKNOWLEDGED without closure details",
+      "Operating notes do not contain a prescribed corrective action"
+    ]
+  }
+}
