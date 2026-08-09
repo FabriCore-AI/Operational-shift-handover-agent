@@ -1,0 +1,52 @@
+[
+  {
+    "scenario_id": "S001",
+    "name": "Normal Shift",
+    "purpose": "baseline normal operation"
+  },
+  {
+    "scenario_id": "S002",
+    "name": "Equipment Warning",
+    "purpose": "warning alarm with continued operation"
+  },
+  {
+    "scenario_id": "S003",
+    "name": "Equipment Failure",
+    "purpose": "equipment trip and recovery"
+  },
+  {
+    "scenario_id": "S004",
+    "name": "Production Deviation",
+    "purpose": "production below target with operational cause"
+  },
+  {
+    "scenario_id": "S005",
+    "name": "Outstanding Maintenance",
+    "purpose": "open maintenance action carried into next shift"
+  },
+  {
+    "scenario_id": "S006",
+    "name": "Conflicting Evidence",
+    "purpose": "operator note conflicts with telemetry/alarm evidence"
+  },
+  {
+    "scenario_id": "S007",
+    "name": "Missing Information",
+    "purpose": "important event lacks complete supporting detail"
+  },
+  {
+    "scenario_id": "S008",
+    "name": "Multiple Events",
+    "purpose": "several simultaneous operational events"
+  },
+  {
+    "scenario_id": "S009",
+    "name": "Recovered Alarm",
+    "purpose": "alarm occurs and condition returns to normal"
+  },
+  {
+    "scenario_id": "S010",
+    "name": "High Severity Event",
+    "purpose": "critical event requiring explicit next-shift attention"
+  }
+]

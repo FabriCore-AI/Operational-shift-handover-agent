@@ -1,0 +1,5 @@
+maintenance_id,timestamp,equipment_id,type,issue,action,status
+MNT-S003-01,2026-07-03T17:20:00,P-101,CORRECTIVE,Trip,Inspect pump and bearing assembly,COMPLETED
+MNT-S005-01,2026-07-05T21:10:00,P-101,INSPECTION,Elevated vibration,Inspect bearing condition,OPEN
+MNT-S007-01,2026-07-07T19:00:00,R-101,INSPECTION,High temperature,Verify cooling system,IN_PROGRESS
+MNT-S010-01,2026-07-10T09:40:00,R-101,CORRECTIVE,Protection trip,Inspect reactor and protection system,OPEN

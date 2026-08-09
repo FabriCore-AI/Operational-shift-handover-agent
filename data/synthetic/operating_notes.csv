@@ -1,0 +1,11 @@
+note_id,scenario_id,timestamp,author_role,note
+NOTE-S001,S001,2026-07-01T13:50:00,Operator,Production remained stable with no significant issues.
+NOTE-S002,S002,2026-07-02T13:45:00,Operator,P-101 appeared noisier than usual after 10:00; vibration alarm was acknowledged.
+NOTE-S003,S003,2026-07-03T21:40:00,Supervisor,P-101 tripped and was restored after maintenance intervention.
+NOTE-S004,S004,2026-07-04T13:40:00,Supervisor,Production was impacted by P-101 downtime.
+NOTE-S005,S005,2026-07-05T21:45:00,Operator,P-101 inspection was requested before the next shift.
+NOTE-S006,S006,2026-07-06T13:45:00,Operator,P-101 operating normally.
+NOTE-S007,S007,2026-07-07T21:40:00,Operator,R-101 seemed hotter than usual; cooling system was checked. Details of the inspection were not recorded.
+NOTE-S008,S008,2026-07-08T13:40:00,Supervisor,P-101 vibration increased while R-101 temperature also rose during production.
+NOTE-S009,S009,2026-07-09T21:40:00,Operator,R-101 temperature returned to normal after cooling-system check.
+NOTE-S010,S010,2026-07-10T13:30:00,Supervisor,R-101 protection trip occurred. Unit remains under inspection.

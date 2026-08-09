@@ -1,0 +1,2 @@
+# Equipment Escalation Policy
+Critical trips require explicit review by the responsible operations or maintenance personnel. A generated handover is decision support and does not replace authorized operational procedures.
