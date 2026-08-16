@@ -1,2 +1,0 @@
-# Pump Vibration Response
-When elevated pump vibration is recorded, operators should verify equipment condition and follow the applicable inspection procedure. Do not infer component failure without supporting evidence.

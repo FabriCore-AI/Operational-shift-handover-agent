@@ -118,3 +118,45 @@ V8  API -> Agent -> RAG/Data/Tools -> Validation
 ```
 
 **Rule:** each version adds only what is needed to solve the previous version's demonstrated limitation.
+
+---
+
+## Version Evolution
+
+### V0
+
+```text
+Shift Data
+    ↓
+   LLM
+    ↓
+Handover
+```
+### V1
+```
+                 ┌── Documents
+                 ↓
+Shift Data → Retrieval
+                 ↓
+              Context
+                 ↓
+                LLM
+                 ↓
+             Handover
+```
+### Target Architecture
+```
+            ┌── Documents
+            ├── Operational Data
+            ├── Tools
+            ├── Validation
+            ├── Evaluation
+            ├── Observability
+            └── Guardrails
+                    ↓
+                  Agent
+                    ↓
+              Human Review
+                    ↓
+              Final Handover
+```

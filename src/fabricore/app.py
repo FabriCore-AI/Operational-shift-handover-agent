@@ -8,6 +8,8 @@ import argparse
 import json
 from pathlib import Path
 
+from fabricore.retrieval.retriever import DocumentRetriever
+
 from fabricore.config.settings import get_settings
 from fabricore.data.loader import SyntheticDataLoader
 from fabricore.handover.generator import HandoverGenerator
@@ -45,8 +47,14 @@ def main() -> None:
 
     llm_client = GroqLLMClient()
 
+    retriever = DocumentRetriever(
+        embedding_model=settings.embedding_model,
+        vector_store_dir=settings.vector_store_dir,
+    )
+
     generator = HandoverGenerator(
         llm_client=llm_client,
+        retriever=retriever,
     )
 
     print("→ Generating handover...")

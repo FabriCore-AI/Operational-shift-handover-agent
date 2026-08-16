@@ -3,6 +3,16 @@ from fabricore.models.schemas import ShiftContext, ShiftRecord
 from fabricore.llm.base import LLMClient
 
 
+
+class FakeRetriever:
+    def search(
+        self,
+        query: str,
+        top_k: int = 3,
+    ):
+        return []
+    
+
 class FakeLLMClient(LLMClient):
     def generate_structured(
         self,
@@ -51,8 +61,10 @@ def test_handover_generator_returns_handover_report():
         )
     )
 
+    llm_client = FakeLLMClient()
     generator = HandoverGenerator(
-        llm_client=FakeLLMClient()
+        llm_client=llm_client,
+        retriever=FakeRetriever(),
     )
 
     report = generator.generate(context)

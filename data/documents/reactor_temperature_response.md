@@ -1,2 +1,0 @@
-# Reactor Temperature Response
-For elevated reactor temperature, verify the temperature trend, alarm state, and cooling-system condition. Record the event and required follow-up. Do not treat an alarm alone as proof of equipment damage.

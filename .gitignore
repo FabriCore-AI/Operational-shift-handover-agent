@@ -10,3 +10,5 @@ wheels/
 .venv
 .env
 outputs/
+# Generated vector index
+src/fabricore/data/vector_store/

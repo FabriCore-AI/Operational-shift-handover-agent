@@ -1,2 +1,0 @@
-# Production Deviation Procedure
-When actual production is below target, identify recorded downtime or operational events that may be associated with the deviation. Do not assign causality unless the available records support it.

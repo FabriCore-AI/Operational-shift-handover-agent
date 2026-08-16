@@ -1,2 +1,0 @@
-# Shift Handover Procedure
-A shift handover should summarize observed events, equipment concerns, production impact, outstanding actions, and items requiring next-shift attention. Operational facts must be supported by recorded evidence.
