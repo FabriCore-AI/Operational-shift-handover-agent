@@ -3,13 +3,13 @@
   "scenario_name": "Conflicting Evidence",
   "shift_id": "SHIFT-S006",
   "status": "SUCCESS",
-  "latency_seconds": 10.21,
+  "latency_seconds": 11.578,
   "report": {
     "shift_id": "SHIFT-S006",
-    "executive_summary": "The shift produced 970 units of Product\u2011X against a target of 1000 (Minor Deviation). Downtime was 20\u202fmin with a loss of 30 units. A high\u2011vibration warning alarm on pump P\u2011101 was active during the shift; the operator noted the equipment was operating normally.",
+    "executive_summary": "Shift met 97% of target production (970 of 1000 units). A warning alarm for high vibration on pump P-101 was recorded but the operator reported normal operation. Overall status is a minor deviation with 20 minutes of downtime and a loss of 30 units.",
     "key_events": [
       {
-        "event": "High vibration alarm on P-101",
+        "event": "High vibration alarm on equipment P-101",
         "severity": "WARNING",
         "evidence_ids": [
           "EVT-S006-01"
@@ -19,11 +19,11 @@
     "equipment_issues": [
       {
         "equipment_id": "P-101",
-        "issue": "High vibration alarm active",
-        "status": "OPEN",
+        "issue": "Elevated vibration level (5.8 mm/s) observed",
+        "status": "Observed",
         "evidence_ids": [
-          "EVT-S006-01",
-          "EQ-S006-01"
+          "EQ-S006-01",
+          "EVT-S006-01"
         ]
       }
     ],
@@ -38,10 +38,15 @@
       ]
     },
     "outstanding_actions": [],
-    "next_shift_attention": [],
+    "next_shift_attention": [
+      "Continue monitoring vibration on pump P-101 and record any trend changes.",
+      "Verify that the vibration level remains within acceptable limits before adjusting process parameters.",
+      "Review the cause of the 20\u2011minute downtime and implement corrective actions if needed."
+    ],
     "evidence_limitations": [
-      "Vibration threshold values are not provided, limiting assessment of the alarm severity.",
-      "No maintenance record exists for the vibration issue during this shift."
+      "No root cause analysis for the high vibration alarm is available in the shift data.",
+      "No maintenance actions were recorded; the issue remains open.",
+      "Threshold values for acceptable vibration were not provided in the operational records."
     ]
   }
 }

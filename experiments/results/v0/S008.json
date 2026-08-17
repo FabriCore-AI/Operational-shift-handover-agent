@@ -3,30 +3,23 @@
   "scenario_name": "Multiple Events",
   "shift_id": "SHIFT-S008",
   "status": "SUCCESS",
-  "latency_seconds": 19.935,
+  "latency_seconds": 23.375,
   "report": {
     "shift_id": "SHIFT-S008",
-    "executive_summary": "Shift SHIFT-S008 reported a major deviation: actual production 890 units versus target 1000 units, resulting in a loss of 110 units and 75 minutes of downtime. Two warning alarms were recorded (high vibration on P-101 and high temperature on R-101). No maintenance actions were logged for these events.",
+    "executive_summary": "Shift SHIFT-S008 recorded a major deviation: actual production 890 vs target 1000 (loss 110) with 75 minutes downtime. High vibration alarm on P-101 (EVT-S008-01) and high reactor temperature alarm on R-101 (EVT-S008-02) occurred.",
     "key_events": [
       {
-        "event": "High vibration on equipment P-101",
+        "event": "High vibration alarm on P-101",
         "severity": "WARNING",
         "evidence_ids": [
           "EVT-S008-01"
         ]
       },
       {
-        "event": "High reactor temperature on equipment R-101",
+        "event": "High reactor temperature alarm on R-101",
         "severity": "WARNING",
         "evidence_ids": [
           "EVT-S008-02"
-        ]
-      },
-      {
-        "event": "Supervisor note: vibration increased on P-101 while temperature rose on R-101",
-        "severity": "INFO",
-        "evidence_ids": [
-          "NOTE-S008"
         ]
       }
     ],
@@ -58,17 +51,24 @@
         "PROD-S008"
       ]
     },
-    "outstanding_actions": [],
+    "outstanding_actions": [
+      {
+        "action": "Investigate cause of vibration increase on P-101 and temperature rise on R-101",
+        "owner_or_role": "Maintenance Team",
+        "status": "PENDING",
+        "evidence_ids": [
+          "NOTE-S008"
+        ]
+      }
+    ],
     "next_shift_attention": [
-      "Monitor high vibration alarm on P-101 (EVT-S008-01)",
-      "Monitor high temperature alarm on R-101 (EVT-S008-02)",
-      "Address production shortfall (PROD-S008)"
+      "Monitor vibration levels on P-101",
+      "Monitor temperature on R-101",
+      "Assess potential impact on product quality"
     ],
     "evidence_limitations": [
-      "No equipment status details were provided in the data",
-      "No maintenance actions or resolutions were recorded for the alarms",
-      "Alarm state information is limited to ACTIVE/ACKNOWLEDGED without closure details",
-      "Operating notes do not contain a prescribed corrective action"
+      "No closure or corrective action recorded for alarms EVT-S008-01 and EVT-S008-02.",
+      "No equipment maintenance actions logged during the shift."
     ]
   }
 }

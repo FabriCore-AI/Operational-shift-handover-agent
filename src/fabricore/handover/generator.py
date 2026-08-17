@@ -15,7 +15,7 @@ class HandoverGenerator:
     def __init__(
         self,
         llm_client: LLMClient,
-        retriever: DocumentRetriever,
+        retriever: DocumentRetriever | None = None,
     ) -> None:
         self.llm_client = llm_client
         self.retriever = retriever
@@ -24,16 +24,19 @@ class HandoverGenerator:
         self,
         context: ShiftContext,
     ) -> HandoverReport:
-        query = build_retrieval_query(context)
+        retrieved_context = ""
 
-        retrieved_documents = self.retriever.search(
-            query=query,
-            top_k=3,
-        )
+        if self.retriever is not None:
+            query = build_retrieval_query(context)
 
-        retrieved_context = format_retrieved_context(
-            retrieved_documents
-        )
+            retrieved_documents = self.retriever.search(
+                query=query,
+                top_k=3,
+            )
+
+            retrieved_context = format_retrieved_context(
+                retrieved_documents
+            )
 
         user_prompt = build_handover_prompt(
             context=context,

@@ -144,6 +144,20 @@ Shift Data → Retrieval
                  ↓
              Handover
 ```
+## V2 — RAG + Operational Data Retrieval
+```text
+                    ┌── Operational Data
+                    │
+Shift Request ──────┤
+                    │
+                    └── Reference Documents
+                              ↓
+                       Combined Evidence
+                              ↓
+                             LLM
+                              ↓
+                         Handover
+```
 ### Target Architecture
 ```
             ┌── Documents

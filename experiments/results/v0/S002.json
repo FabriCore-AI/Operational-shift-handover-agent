@@ -3,13 +3,13 @@
   "scenario_name": "Equipment Warning",
   "shift_id": "SHIFT-S002",
   "status": "SUCCESS",
-  "latency_seconds": 2.597,
+  "latency_seconds": 2.678,
   "report": {
     "shift_id": "SHIFT-S002",
-    "executive_summary": "Target production of 1000 units was not met (actual 980 units, loss 20 units). A high vibration warning on equipment P-101 was acknowledged; production continued with a minor deviation.",
+    "executive_summary": "The morning shift completed with a minor deviation. Production of Product-X reached 980 units against a target of 1000, resulting in a loss of 20 units and 15 minutes of downtime. A high vibration alarm on pump P-101 was acknowledged at 11:15; production continued despite the warning.",
     "key_events": [
       {
-        "event": "High vibration alarm on P-101",
+        "event": "High vibration alarm triggered on equipment P-101",
         "severity": "WARNING",
         "evidence_ids": [
           "EVT-S002-01"
@@ -19,11 +19,12 @@
     "equipment_issues": [
       {
         "equipment_id": "P-101",
-        "issue": "Elevated vibration observed (vibration 5.2 mm/s at 12:00)",
+        "issue": "Elevated vibration level observed (5.2 mm/s) and alarm acknowledged",
         "status": "ACKNOWLEDGED",
         "evidence_ids": [
           "EQ-S002-02",
-          "EVT-S002-01"
+          "EVT-S002-01",
+          "NOTE-S002"
         ]
       }
     ],
@@ -39,13 +40,11 @@
     },
     "outstanding_actions": [],
     "next_shift_attention": [
-      "Continue monitoring vibration levels on P-101",
-      "Verify that production remains on target for the remainder of the run"
+      "Continue monitoring vibration levels on P-101 following the warning event EVT-S002-01"
     ],
     "evidence_limitations": [
-      "No vibration threshold values provided to determine if measured levels exceed acceptable limits",
-      "No root cause analysis or maintenance actions recorded for the vibration warning",
-      "Operator notes indicate increased noise but no quantitative measurement beyond the two readings"
+      "Root cause of the high vibration on P-101 was not determined from the provided data",
+      "No maintenance actions were recorded during the shift"
     ]
   }
 }

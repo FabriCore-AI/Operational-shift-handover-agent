@@ -3,22 +3,23 @@
   "scenario_name": "Outstanding Maintenance",
   "shift_id": "SHIFT-S005",
   "status": "SUCCESS",
-  "latency_seconds": 23.671,
+  "latency_seconds": 23.578,
   "report": {
     "shift_id": "SHIFT-S005",
-    "executive_summary": "Shift SHIFT-S005 completed with actual production 960 units versus target 1000 units (4% shortfall). Minor deviation reported. P-101 inspection remains open due to elevated vibration.",
+    "executive_summary": "Evening shift (14:00-22:00) on UNIT-A produced 960 units of Product-X, 40 units below the target of 1000, resulting in a Minor Deviation status. Downtime of 25 minutes was recorded. An open inspection issue on equipment P-101 (elevated vibration) remains unresolved and was requested for follow\u2011up before the next shift.",
     "key_events": [
       {
-        "event": "Maintenance request for P-101 bearing inspection due to elevated vibration",
+        "event": "Production below target by 40 units",
         "severity": "Medium",
         "evidence_ids": [
-          "MNT-S005-01"
+          "PROD-S005"
         ]
       },
       {
-        "event": "Operator noted that P-101 inspection was requested before the next shift",
-        "severity": "Info",
+        "event": "Open inspection request for equipment P-101 due to elevated vibration",
+        "severity": "Low",
         "evidence_ids": [
+          "MNT-S005-01",
           "NOTE-S005"
         ]
       }
@@ -45,21 +46,21 @@
     },
     "outstanding_actions": [
       {
-        "action": "Inspect bearing condition on P-101",
+        "action": "Inspect bearing condition on equipment P-101",
         "owner_or_role": "Operator",
         "status": "OPEN",
         "evidence_ids": [
-          "MNT-S005-01",
-          "NOTE-S005"
+          "MNT-S005-01"
         ]
       }
     ],
     "next_shift_attention": [
-      "Complete P-101 bearing inspection as requested."
+      "Complete inspection of equipment P-101 bearing condition.",
+      "Monitor production rate to achieve the target of 1000 units."
     ],
     "evidence_limitations": [
-      "No equipment list provided; equipment details limited to maintenance record.",
-      "No alarm records provided."
+      "No alarm records were provided for the shift.",
+      "Equipment list is empty; no additional equipment issues are documented."
     ]
   }
 }

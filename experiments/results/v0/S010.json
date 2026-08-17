@@ -3,10 +3,10 @@
   "scenario_name": "High Severity Event",
   "shift_id": "SHIFT-S010",
   "status": "SUCCESS",
-  "latency_seconds": 23.824,
+  "latency_seconds": 21.062,
   "report": {
     "shift_id": "SHIFT-S010",
-    "executive_summary": "Shift SHIFT-S010 (Morning) on 2026-07-10 was marked Critical. Production target was 1000 units; actual output was 820 units with a loss of 180 units and 120 minutes of downtime. At 09:20 R-101 tripped (protection trip) and remained under inspection. A corrective maintenance action to inspect the reactor and protection system is open.",
+    "executive_summary": "Critical shift due to R-101 protection trip. Downtime of 120 minutes resulted in production of 820 units against a target of 1000 (loss of 180 units). Equipment R-101 remains tripped; corrective maintenance is open and unit is under inspection.",
     "key_events": [
       {
         "event": "R-101 protection trip",
@@ -20,11 +20,11 @@
     "equipment_issues": [
       {
         "equipment_id": "R-101",
-        "issue": "Protection trip (equipment status TRIPPED)",
-        "status": "OPEN",
+        "issue": "Protection trip - equipment tripped",
+        "status": "TRIPPED",
         "evidence_ids": [
           "EQ-S010-01",
-          "MNT-S010-01"
+          "EVT-S010-01"
         ]
       }
     ],
@@ -41,7 +41,7 @@
     "outstanding_actions": [
       {
         "action": "Inspect reactor and protection system",
-        "owner_or_role": "Not specified in source data",
+        "owner_or_role": "Maintenance",
         "status": "OPEN",
         "evidence_ids": [
           "MNT-S010-01"
@@ -49,13 +49,13 @@
       }
     ],
     "next_shift_attention": [
-      "Continue inspection of R-101 protection system",
-      "Verify resolution of the protection trip before resuming normal production"
+      "Monitor R-101 status and protection system",
+      "Complete inspection of reactor and confirm resolution of protection trip"
     ],
     "evidence_limitations": [
-      "Root cause of the R-101 protection trip is not provided",
-      "No assigned owner or role for the corrective maintenance action in the source data",
-      "No indication of completion timeline for the open maintenance action"
+      "No closure or resolution record for the corrective maintenance action (MNT-S010-01).",
+      "Owner or responsible party for the outstanding inspection action is not explicitly recorded.",
+      "No post\u2011inspection data or confirmation that R-101 has been returned to service."
     ]
   }
 }

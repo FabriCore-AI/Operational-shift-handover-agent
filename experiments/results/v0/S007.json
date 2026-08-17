@@ -3,10 +3,10 @@
   "scenario_name": "Missing Information",
   "shift_id": "SHIFT-S007",
   "status": "SUCCESS",
-  "latency_seconds": 19.775,
+  "latency_seconds": 22.388,
   "report": {
     "shift_id": "SHIFT-S007",
-    "executive_summary": "Shift achieved 950 units of Product-X (target 1000), resulting in a minor deviation. A high reactor temperature alarm was recorded at 18:10 and an inspection on reactor R-101 is still in progress. Downtime totaled 30 minutes.",
+    "executive_summary": "Shift completed with minor deviation: produced 950 of 1000 target units (5% loss), 30 minutes downtime, and a high reactor temperature alarm acknowledged; inspection of cooling system is in progress with incomplete documentation.",
     "key_events": [
       {
         "event": "High reactor temperature alarm on equipment R-101",
@@ -19,11 +19,12 @@
     "equipment_issues": [
       {
         "equipment_id": "R-101",
-        "issue": "High temperature",
-        "status": "OPEN",
+        "issue": "High temperature reported",
+        "status": "IN_PROGRESS",
         "evidence_ids": [
           "EVT-S007-01",
-          "MNT-S007-01"
+          "MNT-S007-01",
+          "NOTE-S007"
         ]
       }
     ],
@@ -41,23 +42,22 @@
       {
         "action": "Verify cooling system for reactor R-101",
         "owner_or_role": "Maintenance Team",
-        "status": "IN_PROGRESS",
+        "status": "Pending",
         "evidence_ids": [
-          "MNT-S007-01",
-          "NOTE-S007"
+          "MNT-S007-01"
         ]
       }
     ],
     "next_shift_attention": [
       "Continue monitoring reactor R-101 temperature",
-      "Complete verification of cooling system",
-      "Document inspection findings fully",
-      "Address any residual downtime impacts"
+      "Complete verification of cooling system and close inspection",
+      "Document inspection findings",
+      "Assess impact on production schedule"
     ],
     "evidence_limitations": [
-      "Operator note indicates inspection details were not recorded",
-      "Maintenance record status is IN_PROGRESS with no completion timestamp",
-      "No explicit root cause determination for high temperature beyond alarm and inspection"
+      "Maintenance inspection record lacks detailed findings",
+      "No root cause established for high temperature event",
+      "No additional equipment alarms recorded during shift"
     ]
   }
 }

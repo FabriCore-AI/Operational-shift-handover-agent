@@ -9,6 +9,7 @@ import json
 from pathlib import Path
 
 from fabricore.retrieval.retriever import DocumentRetriever
+from fabricore.data.retriever import OperationalDataRetriever
 
 from fabricore.config.settings import get_settings
 from fabricore.data.loader import SyntheticDataLoader
@@ -37,13 +38,19 @@ def main() -> None:
     print(f"Loading shift: {args.shift_id}")
 
     loader = SyntheticDataLoader(
-        data_dir=settings.data_dir,
+        settings.data_dir
     )
 
-    context = loader.load_shift(args.shift_id)
+    operational_retriever = OperationalDataRetriever(
+        loader
+    )
+
+    context = operational_retriever.retrieve(
+        args.shift_id
+    )
 
     print("✓ Shift loaded")
-    print("✓ Operational context assembled")
+    print(f"✓ Operational context retrieved for the shift_id {args.shift_id}")
 
     llm_client = GroqLLMClient()
 
