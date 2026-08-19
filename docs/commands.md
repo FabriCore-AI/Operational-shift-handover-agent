@@ -59,3 +59,21 @@ uv run python experiments/v0_baseline.py
 ```bash
 uv run python experiments/review_v0.py
 ```
+
+## V2 commands
+### Run the final V2 test suite
+```bash
+uv run python -m pytest -v
+```
+
+### Run the V2 demo once more
+
+```bash
+uv run python experiments/demo_v2.py
+```
+
+### Verify the V2 application
+```bash
+uv run python -m fabricore.app --shift-id SHIFT-S002
+uv run python -m fabricore.app --shift-id SHIFT-S010
+```
