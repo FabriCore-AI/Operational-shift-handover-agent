@@ -158,6 +158,59 @@ Shift Request ──────┤
                               ↓
                          Handover
 ```
+
+
+## V3 — Agent + Approved Tools
+
+V3 adds an agent that selects and executes approved tools before the handover is generated.
+
+```text
+User Request
+     ↓
+Handover Agent
+     ↓
+Tool Selection
+     ↓
+Approved Tools
+ ┌───────────────┬─────────────────┬──────────────────────┐
+ ↓               ↓                 ↓
+Operational      Document          Production
+Data             Search            Calculation
+Tool             Tool              Tool
+ └───────────────┴─────────────────┴──────────────────────┘
+                         ↓
+                      Evidence
+```
+
+### V3 Components
+
+* `HandoverAgent`
+* `OperationalDataTool`
+* `DocumentSearchTool`
+* `ProductionCalculationTool`
+* `ToolPlan`
+* Tool argument schemas
+
+### V3 Flow
+
+```text
+Request
+  ↓
+LLM selects required tools
+  ↓
+Validate tool plan
+  ↓
+Execute only approved tools
+  ↓
+Collect evidence
+  ↓
+Generate handover
+```
+
+The agent can only execute registered tools. Tool names and arguments are validated before execution.
+
+V3 remains a decision-support system. It does not control equipment or change process conditions.
+
 ### Target Architecture
 ```
             ┌── Documents

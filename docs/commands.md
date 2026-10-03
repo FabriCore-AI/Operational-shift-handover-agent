@@ -77,3 +77,20 @@ uv run python experiments/demo_v2.py
 uv run python -m fabricore.app --shift-id SHIFT-S002
 uv run python -m fabricore.app --shift-id SHIFT-S010
 ```
+
+## V3 — Agent + Approved Tools
+
+### Run V3 demo
+
+```bash
+uv run python experiments/demo_v3.py
+```
+
+Use this to see the agent select approved tools and execute them for a shift handover request.
+
+### Run all tests
+
+```bash
+uv run python -m pytest -v
+```
+
