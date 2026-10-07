@@ -211,6 +211,31 @@ The agent can only execute registered tools. Tool names and arguments are valida
 
 V3 remains a decision-support system. It does not control equipment or change process conditions.
 
+
+## V4 — Validation
+
+V4 adds deterministic validation after handover generation.
+
+```text
+Request
+  ↓
+Operational Context + Retrieved Documents
+  ↓
+Handover Generator
+  ↓
+Handover Report
+  ↓
+Handover Validator
+  ↓
+Validation Result
+  ↓
+Human Review
+```
+
+The validator checks shift identity, evidence references, production values, and production calculation consistency.
+
+Validation does not prove every natural-language statement in the report. Human review remains required.
+
 ### Target Architecture
 ```
             ┌── Documents

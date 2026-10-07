@@ -1,7 +1,6 @@
 from fabricore.handover.generator import HandoverGenerator
-from fabricore.models.schemas import ShiftContext, ShiftRecord
 from fabricore.llm.base import LLMClient
-
+from fabricore.models.schemas import ShiftContext, ShiftRecord
 
 
 class FakeRetriever:

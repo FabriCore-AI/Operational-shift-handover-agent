@@ -93,4 +93,33 @@ Use this to see the agent select approved tools and execute them for a shift han
 ```bash
 uv run python -m pytest -v
 ```
+## V4 — Validation
 
+### Run the V4 demo
+
+```bash
+uv run python experiments/demo_v4.py
+```
+
+Demonstrates report generation followed by evidence-based validation.
+
+### Run application with validation
+
+```bash
+uv run python -m fabricore.app --shift-id SHIFT-S001
+uv run python -m fabricore.app --shift-id SHIFT-S002
+```
+
+Reports and validation results are saved under `outputs/handovers/`.
+
+### Run tests
+
+```bash
+uv run python -m pytest -v
+```
+
+### Check code quality
+
+```bash
+uv run ruff check src/fabricore/app.py src/fabricore/handover/generator.py experiments/demo_v4.py src/fabricore/validation tests
+```

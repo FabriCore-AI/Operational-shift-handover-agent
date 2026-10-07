@@ -1,11 +1,11 @@
 from fabricore.agent.handover_agent import HandoverAgent
 from fabricore.config.settings import get_settings
 from fabricore.data.loader import SyntheticDataLoader
+from fabricore.llm.base import LLMClient
 from fabricore.retrieval.retriever import DocumentRetriever
 from fabricore.tools.calculations import ProductionCalculationTool
 from fabricore.tools.documents import DocumentSearchTool
 from fabricore.tools.operational import OperationalDataTool
-from fabricore.llm.base import LLMClient
 
 
 def test_v3_agent_collects_evidence() -> None:

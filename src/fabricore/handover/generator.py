@@ -24,16 +24,23 @@ class HandoverGenerator:
         self,
         context: ShiftContext,
     ) -> HandoverReport:
+        report, _ = self.generate_with_evidence(context)
+        return report
+
+
+    def generate_with_evidence(
+        self,
+        context: ShiftContext,
+    ) -> tuple[HandoverReport, list]:
+        retrieved_documents = []
         retrieved_context = ""
 
         if self.retriever is not None:
             query = build_retrieval_query(context)
-
             retrieved_documents = self.retriever.search(
                 query=query,
                 top_k=3,
             )
-
             retrieved_context = format_retrieved_context(
                 retrieved_documents
             )
@@ -52,8 +59,7 @@ class HandoverGenerator:
         try:
             payload = json.loads(raw_response)
         except json.JSONDecodeError as exc:
-            raise ValueError(
-                "LLM returned invalid JSON."
-            ) from exc
+            raise ValueError("LLM returned invalid JSON.") from exc
 
-        return HandoverReport.model_validate(payload)
+        report = HandoverReport.model_validate(payload)
+        return report, retrieved_documents
