@@ -11,7 +11,7 @@ V0 -> V1 -> V2 -> V3 -> V4 -> V5 -> V6 -> V7 -> V8 -> FINAL
 | 03 | V2 | Operational data retrieval |
 | 04 | V3 | Agent + approved tools |
 | 05 | V4 | Validation |
-| 06 | V5 | Evaluation |
+| 06 | V5 | DeepEval + deterministic evaluation |
 | 07 | V6 | Observability |
 | 08 | V7 | Guardrails |
 | 09 | V8 | Production architecture |

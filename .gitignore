@@ -12,3 +12,4 @@ wheels/
 outputs/
 # Generated vector index
 src/fabricore/data/vector_store/
+experiments/results/v5/

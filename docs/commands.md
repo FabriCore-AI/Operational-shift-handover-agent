@@ -123,3 +123,29 @@ uv run python -m pytest -v
 ```bash
 uv run ruff check src/fabricore/app.py src/fabricore/handover/generator.py experiments/demo_v4.py src/fabricore/validation tests
 ```
+
+## V5 — Evaluation
+
+### Install evaluation dependencies
+
+```bash
+uv lock
+uv sync --extra eval
+```
+
+Run `uv lock` after changing dependency groups so the tracked lock file matches `pyproject.toml`. The `eval` extra installs DeepEval without adding it to the normal application dependency set.
+
+### Run the V5 benchmark
+
+```bash
+uv run --extra eval python experiments/evaluate_v5.py
+```
+
+The script evaluates all frozen scenarios in `data/synthetic/benchmarks/scenarios.json`. It writes one result per scenario and an aggregate summary to `experiments/results/v5/`. The run calls the configured Groq model for report generation and DeepEval judging, so API usage and latency depend on the provider.
+
+### Check V5 code quality and tests
+
+```bash
+uv run ruff check src/fabricore/evaluation experiments/evaluate_v5.py tests
+uv run python -m pytest -v
+```

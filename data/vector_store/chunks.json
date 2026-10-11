@@ -1,0 +1,296 @@
+[
+  {
+    "chunk_id": "DOC-P101-OPERATING-001-01",
+    "document_id": "DOC-P101-OPERATING-001",
+    "source": "P-101_operating_guideline.md",
+    "category": "equipment",
+    "title": "Normal Operation",
+    "content": "P-101 is a process pump used to transfer material through the separation section.\n\nDuring normal operation, operators should monitor pump status and available operating indicators.",
+    "metadata": {
+      "document_id": "DOC-P101-OPERATING-001",
+      "source": "P-101_operating_guideline.md",
+      "category": "equipment",
+      "title": "P-101 Operating Guideline"
+    }
+  },
+  {
+    "chunk_id": "DOC-P101-OPERATING-001-02",
+    "document_id": "DOC-P101-OPERATING-001",
+    "source": "P-101_operating_guideline.md",
+    "category": "equipment",
+    "title": "Shift Handover",
+    "content": "Any abnormal equipment indication observed during the shift should be included in the shift handover with the supporting event or equipment record.",
+    "metadata": {
+      "document_id": "DOC-P101-OPERATING-001",
+      "source": "P-101_operating_guideline.md",
+      "category": "equipment",
+      "title": "P-101 Operating Guideline"
+    }
+  },
+  {
+    "chunk_id": "DOC-P101-OPERATING-001-03",
+    "document_id": "DOC-P101-OPERATING-001",
+    "source": "P-101_operating_guideline.md",
+    "category": "equipment",
+    "title": "Evidence Boundary",
+    "content": "This document describes normal operating guidance. It does not determine the root cause of an equipment abnormality.",
+    "metadata": {
+      "document_id": "DOC-P101-OPERATING-001",
+      "source": "P-101_operating_guideline.md",
+      "category": "equipment",
+      "title": "P-101 Operating Guideline"
+    }
+  },
+  {
+    "chunk_id": "DOC-P101-VIBRATION-001-01",
+    "document_id": "DOC-P101-VIBRATION-001",
+    "source": "P-101_vibration_guideline.md",
+    "category": "equipment",
+    "title": "Vibration Monitoring",
+    "content": "P-101 vibration should be monitored when abnormal vibration is detected.\n\nA high-vibration alarm is an indication requiring operator attention.\n\nRepeated or increasing vibration should be reviewed by the appropriate maintenance or engineering personnel.",
+    "metadata": {
+      "document_id": "DOC-P101-VIBRATION-001",
+      "source": "P-101_vibration_guideline.md",
+      "category": "equipment",
+      "title": "P-101 Vibration Guideline"
+    }
+  },
+  {
+    "chunk_id": "DOC-P101-VIBRATION-001-02",
+    "document_id": "DOC-P101-VIBRATION-001",
+    "source": "P-101_vibration_guideline.md",
+    "category": "equipment",
+    "title": "Shift Handover",
+    "content": "A high-vibration alarm should be reported in the shift handover when it occurs.\n\nThe handover should include:\n\n- Equipment ID\n- Alarm or observation\n- Recorded vibration value when available\n- Current equipment status\n- Supporting evidence",
+    "metadata": {
+      "document_id": "DOC-P101-VIBRATION-001",
+      "source": "P-101_vibration_guideline.md",
+      "category": "equipment",
+      "title": "P-101 Vibration Guideline"
+    }
+  },
+  {
+    "chunk_id": "DOC-P101-VIBRATION-001-03",
+    "document_id": "DOC-P101-VIBRATION-001",
+    "source": "P-101_vibration_guideline.md",
+    "category": "equipment",
+    "title": "Evidence Boundary",
+    "content": "A vibration alarm alone does not establish the root cause of the vibration or confirm equipment damage.",
+    "metadata": {
+      "document_id": "DOC-P101-VIBRATION-001",
+      "source": "P-101_vibration_guideline.md",
+      "category": "equipment",
+      "title": "P-101 Vibration Guideline"
+    }
+  },
+  {
+    "chunk_id": "DOC-R101-TEMPERATURE-001-01",
+    "document_id": "DOC-R101-TEMPERATURE-001",
+    "source": "R-101_temperature_guideline.md",
+    "category": "equipment",
+    "title": "Temperature Monitoring",
+    "content": "R-101 temperature should be monitored during operation.\n\nA high-temperature alarm indicates an abnormal operating condition requiring attention.",
+    "metadata": {
+      "document_id": "DOC-R101-TEMPERATURE-001",
+      "source": "R-101_temperature_guideline.md",
+      "category": "equipment",
+      "title": "R-101 Temperature Guideline"
+    }
+  },
+  {
+    "chunk_id": "DOC-R101-TEMPERATURE-001-02",
+    "document_id": "DOC-R101-TEMPERATURE-001",
+    "source": "R-101_temperature_guideline.md",
+    "category": "equipment",
+    "title": "Shift Handover",
+    "content": "When a high-temperature alarm occurs, the handover should record:\n\n- Equipment ID\n- Alarm condition\n- Recorded temperature when available\n- Current equipment status\n- Supporting evidence",
+    "metadata": {
+      "document_id": "DOC-R101-TEMPERATURE-001",
+      "source": "R-101_temperature_guideline.md",
+      "category": "equipment",
+      "title": "R-101 Temperature Guideline"
+    }
+  },
+  {
+    "chunk_id": "DOC-R101-TEMPERATURE-001-03",
+    "document_id": "DOC-R101-TEMPERATURE-001",
+    "source": "R-101_temperature_guideline.md",
+    "category": "equipment",
+    "title": "Evidence Boundary",
+    "content": "A high-temperature alarm does not by itself establish the root cause of the condition or indicate equipment damage.",
+    "metadata": {
+      "document_id": "DOC-R101-TEMPERATURE-001",
+      "source": "R-101_temperature_guideline.md",
+      "category": "equipment",
+      "title": "R-101 Temperature Guideline"
+    }
+  },
+  {
+    "chunk_id": "DOC-OPS-HANDOVER-001-01",
+    "document_id": "DOC-OPS-HANDOVER-001",
+    "source": "shift_handover_guideline.md",
+    "category": "operations",
+    "title": "Handover Content",
+    "content": "A shift handover should communicate:\n\n- Production status\n- Important operational events\n- Equipment issues\n- Open maintenance actions\n- Relevant observations\n- Items requiring attention from the next shift",
+    "metadata": {
+      "document_id": "DOC-OPS-HANDOVER-001",
+      "source": "shift_handover_guideline.md",
+      "category": "operations",
+      "title": "Shift Handover Guideline"
+    }
+  },
+  {
+    "chunk_id": "DOC-OPS-HANDOVER-001-02",
+    "document_id": "DOC-OPS-HANDOVER-001",
+    "source": "shift_handover_guideline.md",
+    "category": "operations",
+    "title": "Evidence",
+    "content": "Operational statements should be supported by available records.\n\nReference documents may provide operating guidance but do not prove that an event occurred.",
+    "metadata": {
+      "document_id": "DOC-OPS-HANDOVER-001",
+      "source": "shift_handover_guideline.md",
+      "category": "operations",
+      "title": "Shift Handover Guideline"
+    }
+  },
+  {
+    "chunk_id": "DOC-OPS-HANDOVER-001-03",
+    "document_id": "DOC-OPS-HANDOVER-001",
+    "source": "shift_handover_guideline.md",
+    "category": "operations",
+    "title": "Human Review",
+    "content": "The generated handover is decision support.\n\nThe receiving operator or responsible human reviewer remains responsible for reviewing the information before acting on it.",
+    "metadata": {
+      "document_id": "DOC-OPS-HANDOVER-001",
+      "source": "shift_handover_guideline.md",
+      "category": "operations",
+      "title": "Shift Handover Guideline"
+    }
+  },
+  {
+    "chunk_id": "DOC-PROC-TRIP-001-01",
+    "document_id": "DOC-PROC-TRIP-001",
+    "source": "equipment_trip_response.md",
+    "category": "procedures",
+    "title": "Response",
+    "content": "When equipment protection trips:\n\n1. Record the equipment identity.\n2. Record the trip condition and available event information.\n3. Confirm the current equipment status.\n4. Follow the applicable approved recovery and inspection procedure.\n5. Record open maintenance or inspection actions in the shift handover.",
+    "metadata": {
+      "document_id": "DOC-PROC-TRIP-001",
+      "source": "equipment_trip_response.md",
+      "category": "procedures",
+      "title": "Equipment Trip Response Procedure"
+    }
+  },
+  {
+    "chunk_id": "DOC-PROC-TRIP-001-02",
+    "document_id": "DOC-PROC-TRIP-001",
+    "source": "equipment_trip_response.md",
+    "category": "procedures",
+    "title": "Important",
+    "content": "The handover system must not authorize equipment restart or modify process parameters.",
+    "metadata": {
+      "document_id": "DOC-PROC-TRIP-001",
+      "source": "equipment_trip_response.md",
+      "category": "procedures",
+      "title": "Equipment Trip Response Procedure"
+    }
+  },
+  {
+    "chunk_id": "DOC-PROC-TRIP-001-03",
+    "document_id": "DOC-PROC-TRIP-001",
+    "source": "equipment_trip_response.md",
+    "category": "procedures",
+    "title": "Evidence Boundary",
+    "content": "A protection trip does not establish its root cause unless supporting evidence is available.",
+    "metadata": {
+      "document_id": "DOC-PROC-TRIP-001",
+      "source": "equipment_trip_response.md",
+      "category": "procedures",
+      "title": "Equipment Trip Response Procedure"
+    }
+  },
+  {
+    "chunk_id": "DOC-PROC-TEMPERATURE-001-01",
+    "document_id": "DOC-PROC-TEMPERATURE-001",
+    "source": "high_temperature_response.md",
+    "category": "procedures",
+    "title": "Response",
+    "content": "When a high-temperature alarm is observed:\n\n1. Confirm the equipment identity and alarm condition.\n2. Record the available temperature reading.\n3. Monitor the equipment condition.\n4. Follow the applicable approved operating procedure.\n5. Record the event and relevant observations in the shift handover.",
+    "metadata": {
+      "document_id": "DOC-PROC-TEMPERATURE-001",
+      "source": "high_temperature_response.md",
+      "category": "procedures",
+      "title": "High Temperature Response Procedure"
+    }
+  },
+  {
+    "chunk_id": "DOC-PROC-TEMPERATURE-001-02",
+    "document_id": "DOC-PROC-TEMPERATURE-001",
+    "source": "high_temperature_response.md",
+    "category": "procedures",
+    "title": "Important",
+    "content": "The handover system must not independently change process parameters or issue equipment control commands.",
+    "metadata": {
+      "document_id": "DOC-PROC-TEMPERATURE-001",
+      "source": "high_temperature_response.md",
+      "category": "procedures",
+      "title": "High Temperature Response Procedure"
+    }
+  },
+  {
+    "chunk_id": "DOC-PROC-TEMPERATURE-001-03",
+    "document_id": "DOC-PROC-TEMPERATURE-001",
+    "source": "high_temperature_response.md",
+    "category": "procedures",
+    "title": "Evidence Boundary",
+    "content": "A high-temperature alarm does not establish a root cause unless supporting evidence is available.",
+    "metadata": {
+      "document_id": "DOC-PROC-TEMPERATURE-001",
+      "source": "high_temperature_response.md",
+      "category": "procedures",
+      "title": "High Temperature Response Procedure"
+    }
+  },
+  {
+    "chunk_id": "DOC-PROC-VIBRATION-001-01",
+    "document_id": "DOC-PROC-VIBRATION-001",
+    "source": "high_vibration_response.md",
+    "category": "procedures",
+    "title": "Response",
+    "content": "When a high-vibration alarm is observed:\n\n1. Confirm the equipment identity and alarm condition.\n2. Record the available vibration reading.\n3. Monitor the equipment condition.\n4. Notify the appropriate maintenance or engineering role according to site practice.\n5. Record the event and relevant observations in the shift handover.",
+    "metadata": {
+      "document_id": "DOC-PROC-VIBRATION-001",
+      "source": "high_vibration_response.md",
+      "category": "procedures",
+      "title": "High Vibration Response Procedure"
+    }
+  },
+  {
+    "chunk_id": "DOC-PROC-VIBRATION-001-02",
+    "document_id": "DOC-PROC-VIBRATION-001",
+    "source": "high_vibration_response.md",
+    "category": "procedures",
+    "title": "Important",
+    "content": "The procedure does not authorize the handover system to directly control or change equipment operating parameters.",
+    "metadata": {
+      "document_id": "DOC-PROC-VIBRATION-001",
+      "source": "high_vibration_response.md",
+      "category": "procedures",
+      "title": "High Vibration Response Procedure"
+    }
+  },
+  {
+    "chunk_id": "DOC-PROC-VIBRATION-001-03",
+    "document_id": "DOC-PROC-VIBRATION-001",
+    "source": "high_vibration_response.md",
+    "category": "procedures",
+    "title": "Evidence Boundary",
+    "content": "The procedure provides response guidance. It does not establish the cause of an individual equipment event.",
+    "metadata": {
+      "document_id": "DOC-PROC-VIBRATION-001",
+      "source": "high_vibration_response.md",
+      "category": "procedures",
+      "title": "High Vibration Response Procedure"
+    }
+  }
+]

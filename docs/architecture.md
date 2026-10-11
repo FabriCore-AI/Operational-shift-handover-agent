@@ -252,3 +252,21 @@ Validation does not prove every natural-language statement in the report. Human 
                     ↓
               Final Handover
 ```
+
+## V5 — Evaluation
+
+V5 evaluates handover quality across the same frozen S001–S010 scenarios. DeepEval provides LLM-as-a-judge scores for faithfulness and handover completeness; deterministic checks continue to verify report structure, evidence references, shift identity, and production values. The evaluation run is separate from normal application execution.
+
+```text
+Frozen Scenarios (S001–S010)
+          ↓
+Generate Handover + Collect Evidence
+          ↓
+DeepEval: Faithfulness + Completeness
+          +
+Deterministic Validation Checks
+          ↓
+Per-Scenario Results + Aggregate Summary
+```
+
+The evaluator uses the configured Groq model as its judge. Expected facts are built from the frozen operational records and scenario metadata; no hand-written gold report is assumed. LLM-judge scores are diagnostic signals, not operational approval.

@@ -167,7 +167,14 @@ class HandoverValidator:
         for field, expected in expected_values.items():
             actual = getattr(report.production_status, field)
 
-            if actual != expected:
+            if field == "status":
+                actual_comparable = str(actual).strip().upper().replace(" ", "_")
+                expected_comparable = str(expected).strip().upper().replace(" ", "_")
+            else:
+                actual_comparable = actual
+                expected_comparable = expected
+
+            if actual_comparable != expected_comparable:
                 issues.append(
                     ValidationIssue(
                         code="PRODUCTION_VALUE_MISMATCH",
